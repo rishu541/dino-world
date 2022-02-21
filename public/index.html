@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Dinosaur Generator</title>
+  </head>
+  <body class="bg-gray-100 flex justify-center items-center font-body">
+    <div
+      class="md:flex flex-row md:justify-center md:items-center bg-white rounded-lg my-24 mx-10"
+    >
+      <div class="w-full md:px-20 md:w-2/4 py-20 px-10">
+        <h2 class="text-3xl text-slate-800 font-bold mb-2">
+          Wanna See Dino 🐱‍🐉 ?
+        </h2>
+        <p class="text-slate-600 text-xl mb-3">Just press the Button Below</p>
+        <button
+          id="btnLoad"
+          class="rounded-full uppercase tracking-wider font-bold cursor-pointer text-xs bg-yellow-500 py-3 px-4 hover:bg-yellow-400"
+        >
+          Click Me
+        </button>
+      </div>
+      <div class="w-full md:w-2/4 h-full relative">
+        <div
+          id="box"
+          class="absolute left-1/2 bottom-10 transform -translate-x-1/2 bg-white/90 text-center py-3 px-5 rounded-full"
+        ></div>
+
+        <div class="object-cover">
+          <img
+            id="imgBox"
+            src="./coming_soon.png"
+            alt=""
+            class="md:rounded-tr-lg rounded-br-lg md:rounded-bl-none rounded-bl-lg object-cover h-96"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
